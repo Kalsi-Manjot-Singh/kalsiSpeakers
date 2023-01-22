@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HomePage Styles */
+.sidebar {
+  width:17.25rem;
+  height: 41.563rem;
+  background: #CFFCFC;
+  padding-top: 40px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 300ms ease-in;
+}
+.sidebar-hidden{
+  transform: translate(-18rem);
+  transition: transform 300ms ease-in-out;
+
+}
+.sidebar a {
+  margin-bottom: 0.936rem;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar a:hover {
+  font-size: 1.7rem;
+}
+
+  body {
+    background-image: url("../css/img/bg1.png") ;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    /* background-size: 29.25rem 41.563rem; */
+    background-repeat: no-repeat;
+  }
+  #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(35, 55, 60, 0.5);
+    height: 7rem;
+  }
+  .logo {
+    margin-left: 1.438rem;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .flex-item {
+    margin-right: 1.438rem;
+  }
+  .marketing-message {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .marketing-message h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 3.5rem;
+    color: #52CE8B;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .body-copy {
+    height: 8.25rem;
+    width: 15.813rem;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding-top: 1.213rem;
+    padding-left: 1.15rem;
+    padding-bottom: 0.813rem;
+    background: rgba(28, 44, 42, 0.5);
+    border-radius: 0.625rem;
+  }
+  .body-copy p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: #CCFFFF;
+    font-weight: 400;
+  }
+  .cta{
+    height: 2.25rem;
+    width: 21.438rem;
+    background: #52CE8B;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+  }
+  .cta a{
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+  }
+  .cta:hover {
+    background: #529C74;
+  }
+  .cta:active {
+    background: #52CE8B;
+  }
+
+
+@media only screen and (min-width:700px){
+  .marketing-message h1 {
+    font-size: 4.5rem;
+  }
+  .body-copy {
+    height: 11.25rem;
+    width: 17.813rem;
+  }
+  .body-copy p {
+    font-size: 1.3rem;
+    color: #CCFFFF;
+    font-weight: 400;
+  }
+  .cta{
+    height: 2.55rem;
+    width: 25.438rem;
+    
+  }
+  .cta a{
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width:1392px){
+  .marketing-message h1 {
+    font-size: 5.5rem;
+  }
+  .body-copy {
+    height: 12.25rem;
+    width: 20.813rem;
+  }
+  .body-copy p {
+    font-size: 1.5rem;
+    color: #CCFFFF;
+    font-weight: 400;
+  }
+  .cta{
+    height: 2.55rem;
+    width: 25.45rem;
+    
+  }
+  .cta a{
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 400;
+  }
+}
